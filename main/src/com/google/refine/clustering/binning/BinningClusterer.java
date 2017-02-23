@@ -183,6 +183,7 @@ public class BinningClusterer extends Clusterer {
      
         Map<String,Map<String,Integer>> map = visitor.getMap();
         _clusters = new ArrayList<Map<String,Integer>>(map.values());
+        _clusters.subList(0,100);//DAM
         Collections.sort(_clusters, new SizeComparator());
     }
     
